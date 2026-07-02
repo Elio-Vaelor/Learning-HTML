@@ -1,0 +1,342 @@
+/* ==========================
+   RESET
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================
+   BODY
+========================== */
+
+body {
+    background: #171717;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar {
+    background: #171717;
+    border-bottom: 2px solid #a88343;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    padding: 15px 40px;
+}
+
+.nav-logo {
+    justify-self: start;
+}
+
+.nav-logo img {
+    width: 55px;
+}
+
+.logo {
+    justify-self: center;
+
+    color: white;
+    font-size: 32px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.contact-button {
+    justify-self: end;
+
+    text-decoration: none;
+    color: #d6b06d;
+
+    border: 1px solid #a88343;
+    padding: 10px 18px;
+    border-radius: 6px;
+
+    transition: .3s;
+}
+
+.contact-button:hover {
+    background: #a88343;
+    color: white;
+}
+
+/* ==========================
+   MAIN CARD
+========================== */
+
+main {
+
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    background: #fffdf9;
+
+    border-radius: 15px;
+
+    padding: 50px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.3);
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero {
+
+    margin: 50px 0;
+
+    background-image:
+        linear-gradient(rgba(255,255,255,.88),rgba(255,255,255,.88)),
+        url("Elio Vaelor Logo Full.png");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 220px;
+
+    padding: 80px 20px;
+
+    margin-bottom: 40px;
+
+    border-bottom: 1px solid #d6b06d;
+}
+
+h1 {
+
+    font-size: 50px;
+
+    font-family: Georgia, serif;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+
+    color: #171717;
+}
+
+h2 {
+
+    color: #a88343;
+
+    font-size: 34px;
+
+    font-family: Georgia, serif;
+}
+
+/* ==========================
+   SECTIONS
+========================== */
+
+section {
+
+    margin: 50px 0;
+
+    margin-bottom: 40px;
+}
+
+.learning p {
+
+    
+    margin: 50px 0;
+
+    max-width: 760px;
+
+    margin: auto;
+
+    font-size: 18px;
+}
+
+/* ==========================
+   INTERESTS
+========================== */
+
+.interest-list p{
+    
+    margin: 50px 0;
+
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.interest-list ul{
+
+    display: inline-block;
+
+    text-align: left;
+
+    padding: 20px 35px;
+
+    background: #f6efe3;
+
+    border-left: 5px solid #a88343;
+
+    border-radius: 8px;
+}
+
+.interest-list li{
+
+    margin: 10px 0;
+}
+
+/* ==========================
+   WEBSITE SECTION
+========================== */
+
+.Website-link a{
+    
+    margin: 50px 0;
+
+
+    color: #8b6425;
+
+    text-decoration: none;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+.Website-link a:hover{
+
+    text-decoration: underline;
+}
+
+.Website-link h4{
+
+    margin-top: 18px;
+
+    color: #171717;
+
+    font-size: 26px;
+}
+
+.Website-link div{
+
+    font-size: 18px;
+
+    margin-top: 6px;
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.hello-button{
+
+    
+    margin: 50px 0;
+
+    display: inline-block;
+
+    background: #a88343;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 28px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.hello-button:hover{
+
+    background: #171717;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    border-top: 2px solid #a88343;
+
+    text-align: center;
+
+    padding: 20px;
+
+    color: #d6b06d;
+
+    background: #171717;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:700px){
+
+.navbar{
+
+grid-template-columns:auto 1fr auto;
+
+padding:15px;
+
+}
+
+.logo{
+
+font-size:22px;
+
+}
+
+main{
+
+width:95%;
+
+padding:25px;
+
+}
+
+h1{
+
+font-size:34px;
+
+}
+
+h2{
+
+font-size:25px;
+
+}
+
+.hero{
+
+background-size:170px;
+
+padding:60px 15px;
+
+}
+
+.learning p{
+
+font-size:16px;
+
+}
+
+.Website-link h4{
+
+font-size:22px;
+
+}
+
+}
